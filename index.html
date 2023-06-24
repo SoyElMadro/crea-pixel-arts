@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pixel Art Paint | @SoyElMadro</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="opciones">
+            <div class="opc-wrapper">
+                <div class="slider">
+                    <label for="rango-anchura">Ancho de la Cuadrícula</label>
+                    <input type="range" id="rango-anchura" min="1" max="35">
+                    <span id="valor-anchura">01</span>
+                </div>
+                <div class="slider">
+                    <label for="rango-altura">Altura de la Cuadrícula</label>
+                    <input type="range" id="rango-altura" min="1" max="35">
+                    <span id="valor-altura">01</span>
+                </div>
+            </div>
+            <div class="opc-wrapper">
+                <button id="enviar-cuadricula">Crear cuadrícula</button>
+                <button id="limpiar-cuadricula">Borrar cuadrícula</button>
+                <input type="color" id="color-input">
+                <button id="borrar-btn">Borrar</button>
+                <button id="pintar-btn">Pintar</button>
+            </div>
+        </div>
+        <div class="contenedor"></div>
+    </div>
+    <a href="https://www.github.com/soyelmadro" target="_blank">
+        <div class="yo" id="yo">
+            <p>@SoyElMadro</p>
+        </div>
+    </a>
+    
+    <script src="code.js"></script>
+</body>
+</html>
